@@ -57,12 +57,14 @@ gradlew build
 
 3. Run the Application
 Run the application using the generated `.jar` file:
-```java -jar build/libs/parkingsystem-0.0.1-SNAPSHOT.jar
+```
+java -jar build/libs/parkingsystem-0.0.1-SNAPSHOT.jar
 ```
 
 4. Access the Application
 -   Open your browser and go to:
-```http://localhost:8080
+```
+http://localhost:8080
 ```
 -   Use the frontend to interact with the parking spot management system.
 
