@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Spot Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Parking Spot Management</h1>
+
+    <!-- Add and Remove Parking Spots Menu -->
+    <div class="spot-management">
+        <button id="toggleSpotManagement">Manage Parking Spots</button>
+        <div id="spotManagementForm" style="display: none;">
+            <input type="text" id="newSpotNumber" placeholder="Enter spot number">
+            <button id="addSpotButton">Add Parking Spot</button>
+            <button id="removeSpotButton">Remove Parking Spot</button>
+        </div>
+    </div>
+
+    <!-- Parking Spots Grid -->
+    <div id="parkingSpotsGrid" class="grid-container">
+        <!-- Parking spots will be dynamically added here -->
+    </div>
+
+    <!-- Park/Unpark Modal -->
+    <div id="parkModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Park Vehicle</h2>
+            <form id="parkForm">
+                <label for="licensePlate">License Plate:</label>
+                <input type="text" id="licensePlate" name="licensePlate" required>
+
+                <label for="vehicleType">Vehicle Type:</label>
+                <input type="text" id="vehicleType" name="vehicleType" required>
+
+                <button type="submit">Park Vehicle</button>
+            </form>
+            <form id="unparkForm" style="display: none;">
+                <p><strong>License Plate:</strong> <span id="occupiedLicensePlate"></span></p>
+                <p><strong>Vehicle Type:</strong> <span id="occupiedVehicleType"></span></p>
+                <button type="submit">Unpark Vehicle</button>
+            </form>
+            <p id="modalResponse"></p>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
