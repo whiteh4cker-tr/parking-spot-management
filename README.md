@@ -70,7 +70,8 @@ http://localhost:8080
 
 # Configuration
 The application uses an H2 Database for data storage. The database file is created in the same directory as the application's `.jar` file. You can access the H2 console at:
-```http://localhost:8080/h2-console
+```
+http://localhost:8080/h2-console
 ```
 -   JDBC URL: jdbc:h2:file:./parkingdb
 
