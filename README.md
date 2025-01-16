@@ -7,6 +7,8 @@
 
  The Parking Spot Management System is a Spring Boot application designed to manage parking spots efficiently. It allows users to add, remove, park, and unpark vehicles in a simulated parking lot. This project is written in Java 21 and uses Spring Boot for the backend, H2 Database for data storage, and a simple frontend for interaction.
 
+![Screenshot](screenshot.png)
+
 # Features
 -   Add Parking Spots: Dynamically add new parking spots to the system.
 
